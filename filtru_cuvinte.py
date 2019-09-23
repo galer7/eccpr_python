@@ -1,13 +1,4 @@
 
-def removePunctuation(x):
-    punctuations = '.,;'
-    for word in x:
-        for pnct in punctuations:
-            if(pnct in word):
-                word = word.split(pnct)[0]
-    return x
-
-
 with open('filtru_cuvinte.txt', 'r') as f:
     content = f.readline().strip('\n')
     x = f.readline().strip('\n')
