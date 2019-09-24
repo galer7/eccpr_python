@@ -10,22 +10,21 @@ if(len(cuvinte_cheie) == int(x)):
     pass
 
 firstContent = content
-print(content)
-print(x)
-print(cuvinte_cheie)
+# print(content)
+# print(x)
+# print(cuvinte_cheie)
 
 content = [elem for elem in content.split()]
-print(f'content: {content}')
+# print(f'content: {content}')
 
 
 for word in cuvinte_cheie:
     for i, word2 in enumerate(content):
         if word in word2:
             content[i] = word2.replace(str(word), ''.join(['*' for letters in word]))
-            print(word2)
-            print('salut')
+            # print(word2)
 
-print(f'content2: {content}')
+# print(f'content after processing: {content}')
 
 
 with open('filtru_cuvinte_result.txt', 'w') as f:

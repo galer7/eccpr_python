@@ -19,6 +19,7 @@ with open('aranj_produse.txt', 'r') as f:
 start = k
 result = 0
 
+
 while(1):
     # print(start)
     # print(aranjamente(start, k))
