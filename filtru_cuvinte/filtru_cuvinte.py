@@ -24,9 +24,8 @@ for word in cuvinte_cheie:
             content[i] = word2.replace(str(word), ''.join(['*' for letters in word]))
             # print(word2)
 
-# print(f'content after processing: {content}')
+print(' '.join(content))
 
-
-with open('filtru_cuvinte_result.txt', 'w') as f:
-    f.write(' '.join(content))
-    f.write('\n')
+# with open('filtru_cuvinte_result.txt', 'w') as f:
+#     f.write(' '.join(content))
+#     f.write('\n')
