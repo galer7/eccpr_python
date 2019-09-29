@@ -10,8 +10,8 @@ probleme.remove('README')
 probleme.remove(probleme[0])
 probleme.remove('files_arrange')
 
-print(probleme)
-print(path)
+# print(probleme)
+# print(path)
 for problema in probleme:
     try:
         os.mkdir(path + f'\\{problema}')
