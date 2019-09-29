@@ -16,7 +16,6 @@ echipe = scoruri[:]
 
 # print(meciuri)
 
-
 for index, meci in enumerate(scoruri):
     scoruri[index] = [meci, 0, 0, 0]
 
