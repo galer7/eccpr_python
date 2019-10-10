@@ -1,0 +1,2 @@
+Ana are 37 de mere coapte (din care doar 35 coapte corespunzator)!
+a,H b,j c,6 d,I e,2 f,R g,5 h,t i,h j,k k,m l,f m,D n,F o,1 p,0 q,c r,G s,n t,N u,e v,B w,r x,U y,p z,A A,8 B,X C,S D,P E,T F,a G,M H,d I,K J,L K,3 L,C M,i N,9 O,E P,w Q,o R,z S,4 T,O U,q V,V W,J X,x Y,Z Z,u 0,l 1,y 2,W 3,s 4,Q 5,g 6,v 7,7 8,b 9,Y

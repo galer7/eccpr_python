@@ -1,4 +1,4 @@
-with open('p3input.txt', 'r') as f:
+with open('asediu_cetate.txt', 'r') as f:
     [nrWords, nrSoldati, start] = [int(x) for x in f.readline().split()]
 
 # print(nrWords, nrSoldati, start)
@@ -26,6 +26,6 @@ while(len(soldati) > 1):
         soldati.remove(soldati[currentLocation])
     else:
         soldati.remove(soldati[currentLocation])
-    # currentLocation = currentLocation  
+    # currentLocation = currentLocation
 
 print(soldati[0])
