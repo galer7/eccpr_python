@@ -14,7 +14,7 @@ result = 0
 sequenceCheck = False
 
 for index, bit in enumerate(binaryList):
-    if bit == 1 and sequenceCheck is False: # start sequence
+    if bit == 1 and sequenceCheck == False: # start sequence
         sequenceCheck = True
     if bit == 0 and sequenceCheck == True:
         result = result + 1
@@ -23,4 +23,4 @@ for index, bit in enumerate(binaryList):
         result = result + 1
 
 print(result)
-        
+
