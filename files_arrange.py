@@ -10,11 +10,11 @@ probleme.remove('README')
 probleme.remove(probleme[0])
 probleme.remove('files_arrange')
 
-# print(probleme)
+print(probleme)
 # print(path)
 for problema in probleme:
     try:
-        os.mkdir(path + f'\\{problema}')
+        os.mkdir(os.path.join(path, problema))
     except:
         continue
 
@@ -22,7 +22,7 @@ for file in files:
     if os.path.isfile(os.path.abspath(file)):
         if file.split('.')[0] in probleme:
             tmp = file.split('.')[0]
-            newPath = os.path.join(path, f'{tmp}\\{file}')
+            newPath = os.path.join(path, tmp, file)
             print(newPath)
             # print(f'old path: {os.path.abspath(file)}, new path: {newName}')
             # # file.close()
