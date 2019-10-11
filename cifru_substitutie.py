@@ -12,7 +12,7 @@ print(text)
 
 for ind, litera in enumerate(text):
     for pair in dict:
-        if(litera is pair[0]):
+        if(litera == pair[0]):
             text[ind] = pair[1]
             break
 
