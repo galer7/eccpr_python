@@ -1,0 +1,7 @@
+6
+patrat 2.10
+dreptunghi 1.20 7.90
+cerc 3.11
+patrat 4.40
+dreptunghi 9.10 0.40
+patrat 1.50
