@@ -1,0 +1,4 @@
+3
+Andrei 1 6 4 8
+Daniela 1 1 7 5
+Matei 8 1 10 8

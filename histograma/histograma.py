@@ -1,4 +1,4 @@
-with open('p0input.txt', 'r') as f:
+with open('histograma.txt', 'r') as f:
     x = f.readline()
 # x = input()
 
