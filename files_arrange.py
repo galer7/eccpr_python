@@ -10,7 +10,7 @@ probleme.remove('README')
 probleme.remove(probleme[0])
 probleme.remove('files_arrange')
 
-print(probleme)
+print(len(probleme))
 # print(path)
 for problema in probleme:
     try:
