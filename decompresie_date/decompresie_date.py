@@ -1,4 +1,4 @@
-with open('codare_date.txt', 'r') as f:
+with open('decompresie_date.txt', 'r') as f:
     f.readline()
     data = []
     for line in f.readlines():
