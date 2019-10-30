@@ -1,37 +1,28 @@
 with open('decompresie_date.txt', 'r') as f:
-    f.readline()
-    data = []
+    size = int(f.readline())
+    content = []
     for line in f.readlines():
-        data.append([int(x) for x in line.split()])
+        content.append(line.strip())
 
-def switch_positions(x):
-    for index, digit in enumerate(x):
-        if(index % 2 == 0):
-            try:
-                x[index], x[index+1] = x[index+1], x[index] # asta schimba definitiv (in memorie) variabila data drept parametru
-            except:
-                break
-    # print(x)
-    return x
+# print(content)
+new_content = [[] for i in range(size)]
 
-def second_encoding(x):
-    for index, digit in enumerate(x):
-        # print(index)
-        if(index == 0):
+for index, line in enumerate(content):
+    current_line = line.split(',') # linia curenta cu split
+    for ind2, elem in enumerate(current_line):
+        if(elem.split('(')[0] == ''): # inseamna ca scriem elem[1:] si apoi (counter) de 0
+            new_content[index].append(elem[1:])
+            counter = int(current_line[ind2+1].split(')')[0]) # trebuie sa stim cat de mare e while-ul
+            while(counter):
+                new_content[index].append('0')
+                counter = counter - 1
+        elif(elem.split(')')[-1] == ''): # am trecut prin el pasul precedent
             continue
-        x[index] = x[index] % 2
-    return x
+        else:
+            new_content[index].append(elem) # daca nu are paranteza, scrie-l normal
 
-max = 0
-sum = 0
+# print(new_content)
 
-for ind, nr in enumerate(data):
-    switch_positions(nr)
-    second_encoding(nr)
-    for digit in nr:
-        sum = sum + digit
-    if(sum > max):
-        max = sum
-    sum = 0
-
-print(max)
+for line in new_content:
+    new_line = ','.join(line)
+    print(f'{new_line}')
