@@ -1,4 +1,10 @@
 # input
+
+def tranzactie(self, source, dest, value):
+    self.source = source
+    self.dest = dest
+    self.value = value
+
 tranzactii = []
 
 with open('tranzactii.txt', 'r') as f:
