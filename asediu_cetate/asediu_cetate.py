@@ -17,15 +17,18 @@ currentLocation = start - 1 # index of list
 maxSoldati = nrSoldati
 step = nrWords - 1
 
+<<<<<<< HEAD
 while len(soldati) > 1:
     # print(f'{soldati} cu lungime {len(soldati)}')
+=======
+while(len(soldati) > 1):
+    
+>>>>>>> 9cc6f3bf52afb7c795379eba24fa8a4eba997b1d
     currentLocation = currentLocation + step # index
-    # print(f'curent location: {currentLocation}')
+
     if(currentLocation >= len(soldati)):
         currentLocation = currentLocation % len(soldati)
-        soldati.remove(soldati[currentLocation])
-    else:
-        soldati.remove(soldati[currentLocation])
-    # currentLocation = currentLocation
+
+    soldati.remove(soldati[currentLocation])
 
 print(soldati[0])
